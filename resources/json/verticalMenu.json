@@ -1,0 +1,292 @@
+{
+    "menu": [
+        {
+            "url": "solicitudes",
+            "name": "Solicitudes",
+            "icon": "clipboard",
+            "can": "solicitudes",
+            "submenu": [
+                {
+                    "route": "solicitudes.suministros.index",
+                    "url": "solicitudes/contratos-suministros",
+                    "name": "Contrato de Suministros ",
+                    "can": "s-contratos suministros"
+                },
+                {
+                    "route": "solicitudes.insumos.index",
+                    "url": "solicitudes/insumos-y-servicios",
+                    "name": "Insumos y Servicios ",
+                    "can": "s-insumos"
+                },
+                {
+                    "route": "solicitudes.convenios.index",
+                    "url": "solicitudes/convenios",
+                    "name": "Convenios",
+                    "can": "s-convenios"
+                },
+                {
+                    "route": "solicitudes.mantenimiento.index",
+                    "url": "solicitudes/mantenimiento",
+                    "name": "Mantenimientos",
+                    "can": "s-mantenimientos"
+                },
+                {
+                    "route": "solicitudes.mis-solicitudes",
+                    "url": "solicitudes/mis-solicitudes",
+                    "name": "Mis Solicitudes",
+                    "can": ""
+                },
+                {
+                    "route": "solicitudes.editar-solicitudes",
+                    "url": "solicitudes/editar-montos",
+                    "name": "Editar Solicitudes",
+                    "can": "editar-solicitud"
+                },
+                {
+                    "route": "solicitudes.montos-adjudicacion",
+                    "url": "solicitudes/montos-adjudicacion",
+                    "name": "Monto de Adjudicación",
+                    "can": "editar-monto"
+                },
+                {
+                    "route": "solicitudes.mis-borradores",
+                    "url": "solicitudes/mis-borradores",
+                    "name": "Mis Borradores",
+                    "can": ""
+                }
+            ]
+        },
+        {
+            "url": "evaluacion",
+            "name": "Evaluación",
+            "icon": "clipboard",
+            "can": "evaluaciones",
+            "submenu": [
+                {
+                    "route": "evaluacion.contrato-suministro.index",
+                    "url": "evaluacion/contrato-suministros",
+                    "name": "Contrato Suministro",
+                    "can": "e-contratos suministros"
+                },
+                {
+                    "route": "evaluacion.insumo.index",
+                    "url": "evaluacion/insumos-y-servicios",
+                    "name": "Insumos y Servicios",
+                    "can": "e-insumos"
+                },
+                {
+                    "route": "evaluacion.convenio.index",
+                    "url": "evaluacion/convenios",
+                    "name": "Convenios",
+                    "can": "e-convenios"
+                },
+                {
+                    "route": "evaluacion.mantenimiento.index",
+                    "url": "evaluacion/mantenimientos",
+                    "name": "Mantenimientos",
+                    "can": "e-mantenimientos"
+                }
+            ]
+
+        },
+        {
+            "url": "ordenes",
+            "name": "Abastecimiento",
+            "icon": "shopping-bag",
+            "can": "abastecimiento",
+            "submenu": [
+                {
+                    "route": "ordenes.index",
+                    "url": "ordenes/lista-de-ordenes",
+                    "name": "Lista de Ordenes",
+                    "can": "ordenes"
+                },
+                {
+                    "route": "decretos.index",
+                    "url": "decretos/lista-de-decretos",
+                    "name": "Lista de Decretos",
+                    "can": "decretos"
+                }
+            ]
+        },
+        {
+            "url": "recepciones",
+            "name": "Recepciones",
+            "icon": "box",
+            "can": "recepciones",
+            "submenu": [
+                {
+                    "route": "recepciones.index",
+                    "url": "recepciones/index",
+                    "name": "Lista de Recepciones",
+                    "can": "r-solicitudes"
+                },
+                {
+                    "route": "recepciones.aprobaciones.finanzas",
+                    "url": "recepciones/aprobaciones/finanzas",
+                    "name": "Aprobaciones Finanzas",
+                    "can": "r-evaluacion-finanzas"
+                },
+                {
+                    "route": "recepciones.aprobaciones.abastecimiento",
+                    "url": "recepciones/aprobaciones/abastecimiento",
+                    "name": "Aprobaciones Abastecimiento",
+                    "can": "r-evaluacion-abastecimiento"
+                }
+            ]
+        },
+        {
+            "url": "expedientes",
+            "name": "Expedientes Pago",
+            "icon": "file",
+            "can": "expedientes",
+            "submenu": [
+                {
+                    "route": "expediente.index",
+                    "url": "expedientes/lista-de-expedientes",
+                    "name": "Lista de Expedientes",
+                    "can": "expedientes"
+                },
+                {
+                    "route": "expediente.create",
+                    "url": "expedientes/create",
+                    "name": "Crear Expediente",
+                    "can": "expedientes.create"
+                }
+            ]
+        },
+        {
+            "url": "reportes",
+            "name": "Reportes",
+            "icon": "printer",
+            "can": "reportes",
+            "submenu": [
+                {
+                    "route": "reportes.solicitudes",
+                    "url": "reportes/reporte-mis-solicitudes",
+                    "name": "Lista de Solicitudes",
+                    "can": "reportes-solicutudes"
+                },
+                {
+                    "route": "reportes.solicitudes.convenio",
+                    "url": "reportes/reporte-solicitudes-convenios",
+                    "name": "Lista de Convenios",
+                    "can": "reportes-solicutudes-convenios"
+                },
+                {
+                    "route": "reportes.solicitudes.insumos",
+                    "url": "reportes/reporte-solicitudes-insumos",
+                    "name": "Lista de Insumos",
+                    "can": "reportes-solicutudes-insumos"
+                },
+                {
+                    "route": "reportes.solicitudes.mantenimiento",
+                    "url": "reportes/reporte-solicitudes-mantenimiento",
+                    "name": "Lista de Mantenimiento",
+                    "can": "reportes-solicutudes-mantenimiento"
+                },
+                {
+                    "route": "reportes.solicitudes.contrato.suministro",
+                    "url": "reportes/reporte-solicitudes-contrato-suministro",
+                    "name": "Lista de Contrato Suministro",
+                    "can": "reportes-solicutudes-contrato-suministro"
+                }
+            ]
+
+        },
+        {
+            "url": "mantenimiento",
+            "name": "Mantenimiento",
+            "icon": "edit",
+            "can": "mantenimiento",
+            "submenu": [
+                {
+                    "route": "admin.convenio.index",
+                    "url": "admin/convenios",
+                    "name": "Lista de Convenios ",
+                    "can": "convenios"
+                },
+                {
+                    "route": "admin.proveedor.index",
+                    "url": "admin/proveedores",
+                    "name": "Lista de Proveedores",
+                    "can": "proveedores"
+                },
+                {
+                    "route": "admin.tipos-contratos.index",
+                    "url": "admin/tipos-contratos",
+                    "name": "Tipos de Contratos",
+                    "can": "tipos-contratos"
+                },
+                {
+                    "route": "admin.contrato-suministro.index",
+                    "url": "admin/contrato-suministro",
+                    "name": "Contrato de Suministro",
+                    "can": "contrato-suministro"
+                },
+                {
+                    "route": "admin.productos.index",
+                    "url": "admin/productos",
+                    "name": "Lista de Productos",
+                    "can": "productos"
+                },
+                {
+                    "route": "admin.cuenta.index",
+                    "url": "admin/cuentas",
+                    "name": "Lista de Cuentas",
+                    "can": "cuentas"
+                },
+                {
+                    "route": "admin.unidades-medida.index",
+                    "url": "admin/unidades-medida",
+                    "name": "Lista de Unidades",
+                    "can": "unidades medidas"
+                },
+                {
+                    "route": "admin.rechazo.index",
+                    "url": "admin/estados-rechazados",
+                    "name": "Tipos de Rechazo",
+                    "can": "rechazos"
+                },
+                {
+                    "route": "admin.criterios.index",
+                    "url": "admin/criterios-adjudicacion",
+                    "name": "Criterios de Adjudicación",
+                    "can": "criterios"
+                },
+                {
+                    "route": "admin.dependencias.index",
+                    "url": "admin/dependencias",
+                    "name": "Lista de Dependencias",
+                    "can": "dependencias"
+                },
+                {
+                    "route": "admin.departamentos.index",
+                    "url": "admin/departamentos",
+                    "name": "Lista de Departamentos",
+                    "can": "departamentos"
+                },
+                {
+                    "route": "admin.roles.index",
+                    "url": "admin/roles",
+                    "name": "Lista de Roles",
+                    "can": "roles"
+                }
+            ]
+        },
+        {
+            "url": "usuarios",
+            "name": "Usuarios",
+            "icon": "users",
+            "can": "usuarios",
+            "submenu": [
+                {
+                    "route": "admin.usuario.index",
+                    "url": "admin/usuarios",
+                    "name": "Lista de Usuarios ",
+                    "can": ""
+                }
+            ]
+        }
+    ]
+}
